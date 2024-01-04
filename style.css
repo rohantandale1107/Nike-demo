@@ -23,7 +23,7 @@ body{
 }
 .nav{
     height: 90px;
-    padding: 0 50px;
+    padding: 0 2.5vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,8 +33,8 @@ body{
    
 }
 .nav img{
-    height: 35px;
-    margin-right: 170px;
+    height: 2vw;
+    padding-right: 7vw;
     cursor: pointer;
     
 }
@@ -42,19 +42,36 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 3vw;
+    gap: 4vw;
 }
 .nav-part1 h4{
-    margin-right: 50px;
-    font-size: 17px;
+    
+    font-size: 1.3vmax;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
 }
+.nav-part2{
+    display: flex;
+    padding-left: 30px;
+    gap:4vw;
+}
 .nav-part2 i{
-    margin-right: 60px;
-    font-size: 22px;
+    
+    font-size: 1.5vmax;
     font-weight: 300;
     cursor: pointer;
+    display: flex;
+}
+
+@media (max-width:700px){
+    .nav{
+        padding: 0 5vw;
+    }
+    .nav-part1 i{
+        width: 100vw;
+    }
 }
 .content{
     width: 100%;
@@ -72,14 +89,15 @@ body{
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
     
 }
 .right::-webkit-scrollbar{
     display: none;
 }
 .elem{
-    height: 400px;
-    width: 280px;
+    height: 60vh;
+    width: 20vmax;
     background-color: #F6F6F6;
     position: relative;
     border-radius: 10px;
@@ -114,7 +132,7 @@ body{
     right: 0;
     background-color:#D0D4D5;
     padding: 15px 33px;
-    font-size: 16px;
+    font-size: 1.1vmax;
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
@@ -128,9 +146,9 @@ body{
     background-color:#010511;
     color: azure;
     padding: 12px 17px;
-    font-size: 10px;
+    font-size: 0.8vmax;
     border-radius: 6px;
-    font-weight:600;
+    font-weight:500;
     border-bottom-right-radius: 0;
     
 }
@@ -139,20 +157,20 @@ body{
     height: 100%;
     padding: 50px;
     padding-left: 100px;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 .left h5{
-    font-size: 14px;
+    font-size: 1.2vmax;
     color: #808584;
 }
 .left h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 4vmax;
     margin-top: 25px;
 }
 .left p{
     
-    font-size: 14px;
+    font-size: 1vmax;
     margin-top: 25px;
     margin-bottom: 40px;
     color: #616464;
